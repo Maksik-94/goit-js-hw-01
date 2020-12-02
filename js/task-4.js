@@ -5,7 +5,7 @@ let message;
 
 const input = prompt("Cколько едениц Вам нужно?");
 
-if (!input) {
+if (input == null ) {
   message = "Отменено пользователем!";
 } else if (input > 0) {
   totalPrice = input * pricePerDroid;
