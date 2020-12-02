@@ -12,7 +12,7 @@ if (!input) {
   if (totalPrice > credits) {
     message = "Недостаточно средств на счету!";
   } else {
-    let restCredits = credits - totalPrice;
+    const restCredits = credits - totalPrice;
     message = `Вы купили ${input} дроидов, на счету осталось ${restCredits} кредитов.`;
   }
 } else {
